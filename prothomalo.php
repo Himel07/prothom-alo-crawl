@@ -11,7 +11,7 @@ echo "title ->". "$title". "<br/>";
 
   //date
 $datePublished_content = explode('itemprop="datePublished" content=', $content);
-$datePublished_content = explode('</span>', $datePublished_content[1]);
+$datePublished_content = explode('">', $datePublished_content[1]);
 $datePublished_content = $datePublished_content[0];
 echo "datePublished_content";
 
